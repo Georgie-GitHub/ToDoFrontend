@@ -16,7 +16,11 @@ function App() {
 
   const fetchTasks = async (token) => {
     const response = await fetch(
+<<<<<<< HEAD
       "https://todobackend-39bd.onrender.com/tasks",
+=======
+      "https://todobackend-1hud.onrender.com/tasks",
+>>>>>>> 7f645026c6d5dcda85b9ec4d557d05328b183bcf
       {
         headers: { Authorization: `Bearer ${token}` },
       }
@@ -39,7 +43,11 @@ function App() {
 
   const addTask = async (text) => {
     const response = await fetch(
+<<<<<<< HEAD
       "https://todobackend-39bd.onrender.com/tasks",
+=======
+      "https://todobackend-1hud.onrender.com/tasks",
+>>>>>>> 7f645026c6d5dcda85b9ec4d557d05328b183bcf
       {
         method: "POST",
         headers: {
@@ -54,7 +62,11 @@ function App() {
   };
 
   const deleteTask = async (id) => {
+<<<<<<< HEAD
     await fetch(`https://todobackend-39bd.onrender.com/tasks/${id}`, {
+=======
+    await fetch(`https://todobackend-1hud.onrender.com/tasks/${id}`, {
+>>>>>>> 7f645026c6d5dcda85b9ec4d557d05328b183bcf
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -64,7 +76,11 @@ function App() {
   const updateTaskStatus = async (id, currentStatus) => {
     const newStatus = currentStatus === "pending" ? "completed" : "pending";
     const response = await fetch(
+<<<<<<< HEAD
       `https://todobackend-39bd.onrender.com/tasks/${id}/status`,
+=======
+      `https://todobackend-1hud.onrender.com/tasks/${id}/status`,
+>>>>>>> 7f645026c6d5dcda85b9ec4d557d05328b183bcf
       {
         method: "PATCH",
         headers: {
@@ -80,7 +96,11 @@ function App() {
 
   const updateTaskPriority = async (id, newPriority) => {
     const response = await fetch(
+<<<<<<< HEAD
       `https://todobackend-39bd.onrender.com/tasks/${id}/priority`,
+=======
+      `https://todobackend-1hud.onrender.com/tasks/${id}/priority`,
+>>>>>>> 7f645026c6d5dcda85b9ec4d557d05328b183bcf
       {
         method: "PATCH",
         headers: {
