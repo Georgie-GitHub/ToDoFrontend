@@ -14,7 +14,7 @@ function Signup() {
     setAuthError("");
     setSuccess(false);
     const response = await fetch(
-      "https://todobackend-lk4s.onrender.com/register",
+      "https://todobackend-1hud.onrender.com/register",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -88,3 +88,4 @@ function Signup() {
 }
 
 export default Signup;
+
