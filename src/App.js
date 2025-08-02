@@ -39,7 +39,7 @@ function App() {
 
   const addTask = async (text) => {
     const response = await fetch(
-      "https://todobackend-lk4s.onrender.com/tasks",
+      "https://todobackend-1hud.onrender.com/tasks",
       {
         method: "POST",
         headers: {
@@ -54,7 +54,7 @@ function App() {
   };
 
   const deleteTask = async (id) => {
-    await fetch(`https://todobackend-lk4s.onrender.com/tasks/${id}`, {
+    await fetch(`https://todobackend-1hud.onrender.com/tasks/${id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -64,7 +64,7 @@ function App() {
   const updateTaskStatus = async (id, currentStatus) => {
     const newStatus = currentStatus === "pending" ? "completed" : "pending";
     const response = await fetch(
-      `https://todobackend-lk4s.onrender.com/tasks/${id}/status`,
+      `https://todobackend-1hud.onrender.com/tasks/${id}/status`,
       {
         method: "PATCH",
         headers: {
@@ -80,7 +80,7 @@ function App() {
 
   const updateTaskPriority = async (id, newPriority) => {
     const response = await fetch(
-      `https://todobackend-lk4s.onrender.com/tasks/${id}/priority`,
+      `https://todobackend-1hud.onrender.com/tasks/${id}/priority`,
       {
         method: "PATCH",
         headers: {
